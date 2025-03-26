@@ -51,8 +51,8 @@ while True:
     print(f"현재 서버 시간: {login_sec}, 목표 시간: {login_time}")
 
     if login_time <= login_sec:
-        driver.find_element(By.ID, "userID").send_keys("202455423")   # 아이디 삽입
-        driver.find_element(By.ID, "userPW").send_keys("qlalfqjsgh1@") # 비밀번호 삽입
+        driver.find_element(By.ID, "userID").send_keys("ID")   # 아이디 삽입
+        driver.find_element(By.ID, "userPW").send_keys("PWD") # 비밀번호 삽입
         driver.find_element(By.ID, "btnLogin").click()
         break
     else:
